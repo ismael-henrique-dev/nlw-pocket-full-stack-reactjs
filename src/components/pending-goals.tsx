@@ -17,6 +17,8 @@ export function PendingGoals() {
     return null
   }
 
+  console.log(data)
+
   async function handleCompletionGoal(goalId: string) {
     await createGoalCompletion(goalId)
 
@@ -26,10 +28,14 @@ export function PendingGoals() {
   return (
     <div className="flex flex-wrap gap-3">
       {data.map(goal => {
+        console.log(
+          `Aqui está o desiredWeeklyFrequency: ${goal.deseridWeeklyFrequency}`
+        )
+        console.log(goal.completionCount)
         return (
           <OutlineButton
             key={goal.id}
-            disabled={goal.completionCount >= goal.deseridWeeklyFrequency}
+            disabled={goal.deseridWeeklyFrequency <= goal.completionCount}
             onClick={() => handleCompletionGoal(goal.id)} // Sempre que eu tiver uma função com parâmetro eu executo dessa forma
           >
             <Plus className="size-4 text-zinc-600" />
