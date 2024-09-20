@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" height="300" src="src/assets/Grocery Store.png"  />
+  <img align="center" height="300" src="./public/icon.svg"  />
 </p>
 
 ## <p align="center">NLW POCKET - In.orbit </p>
