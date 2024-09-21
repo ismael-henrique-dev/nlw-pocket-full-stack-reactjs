@@ -8,8 +8,8 @@ import { useQuery } from '@tanstack/react-query'
 import { getSummary } from '../http/get-summary'
 import dayjs from 'dayjs'
 import { PendingGoals } from './pending-goals'
-// import ptBr from 'dayjs/locale/pt-BR'
-
+import ptBr from 'dayjs/locale/pt-br'
+dayjs.locale(ptBr)
 
 export function Summary() {
   const { data } = useQuery({
