@@ -8,8 +8,8 @@ import { useQuery } from '@tanstack/react-query'
 import { getSummary } from '../http/get-summary'
 import dayjs from 'dayjs'
 import { PendingGoals } from './pending-goals'
-// import ptBr from 'dayjs/locale/pt-BR'
-
+import ptBr from 'dayjs/locale/pt-br'
+dayjs.locale(ptBr)
 
 export function Summary() {
   const { data } = useQuery({
@@ -64,7 +64,7 @@ export function Summary() {
       <div className="flex flex-col gap-6">
         <h2 className="text-xl font-medium ">Sua semana</h2>
 
-        {Object.entries(data.goalsPerDay).map(([date, goals]) => {
+        {data.goalsPerDay && Object.entries(data.goalsPerDay).map(([date, goals]) => {
           const weekDay = dayjs(date).format('dddd')
           const formatedDate = dayjs(date).format('D [ de ] MMMM')
 
