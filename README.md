@@ -14,9 +14,9 @@ O in.orbit é um site com o objetivo de fascilitar o gerenciamento de metas pess
 
 ## 📸 Screenshots
 <p align="center">
-  <img height="350" src="./public/primary.svg" />
-  <img height="350" src="./public/secondary.svg" />
-  <img height="430" src="./public/tertiary.svg" />
+  <img height="500" src="./public/primary.svg" />
+  <img height="500" src="./public/secondary.svg" />
+  <img height="500" src="./public/tertiary.svg" />
 </p>
 
 ## 🚀 Rodando localmente
