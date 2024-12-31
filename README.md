@@ -62,9 +62,9 @@ Inicie o servidor
 
 ## 🛠️ Funcionalidades
 
-- Realizar o carregando das metas
+- Realizar o fecth das metas
 - Criar novas metas
-- Ver seu progresso semanal
+- Ver o progresso semanal
 - Completar metas
 
 
