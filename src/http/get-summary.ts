@@ -12,8 +12,10 @@ type SummaryResponse = {
 }
 
 export async function getSummary(): Promise<SummaryResponse> {
-  const response = await fetch('http://localhost:3333/summary')
+  const response = await fetch('https://nlw-pocket-full-stack-nodejs.onrender.com/summary')
   const data = await response.json()
+
+  console.log('Api data: ' + data.summary)
 
   return data.summary
 }

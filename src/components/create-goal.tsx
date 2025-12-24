@@ -49,7 +49,7 @@ export function CreateGoal() {
       <div className="flex flex-col gap-6 h-full">
         <div className="flex flex-col gap-3">
           <div className="flex justify-between">
-            <DialogTitle>Cadrastar meta</DialogTitle>
+            <DialogTitle>Cadastrar meta</DialogTitle>
             <DialogClose>
               <X className="size-5 text-zinc-600" />
             </DialogClose>

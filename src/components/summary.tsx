@@ -18,6 +18,8 @@ export function Summary() {
     staleTime: 60 * 1000
   })
 
+  console.log(data)
+
   if (!data) {
     return null
   }
@@ -38,7 +40,7 @@ export function Summary() {
         <DialogTrigger asChild>
           <Button size="sm">
             <Plus className="size-4" />
-            Cadrastar meta
+            Cadastrar meta
           </Button>
         </DialogTrigger>
       </div>

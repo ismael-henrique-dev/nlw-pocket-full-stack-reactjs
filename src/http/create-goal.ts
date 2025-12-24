@@ -4,7 +4,7 @@ interface CreateGoalRequest {
 }
 
 export async function createGoal({title, deseridWeeklyFrequency}: CreateGoalRequest) {
-  await fetch('http://localhost:3333/goals', {
+  await fetch('https://nlw-pocket-full-stack-nodejs.onrender.com/goals', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
